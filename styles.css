@@ -40,10 +40,18 @@ html{
 
 /*HEADER*/
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f9f5f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
 
 .container-hero{
     background-color: #f9f5f0;
-
     position: relative;
 }
 
@@ -123,7 +131,7 @@ html{
     flex-direction: column;
 }
 
-/*NAVBAR*/
+/*-------------------NAVBAR----------------------------*/
 
 .container-navbar{
     background-color: var(--primary-color);
@@ -177,7 +185,9 @@ html{
 
 .menu a:hover{
     color: #fff;
+    
 }
+
 
 .search-form{
     position: relative;
@@ -584,3 +594,43 @@ html{
     color: #777;
     margin-left: .5rem;
 }
+
+/* SUBMENU CORRECTAMENTE OCULTO Y DESPLEGABLE */
+
+.opcion-principal {
+    position: relative;
+}
+
+.opcion-principal .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    z-index: 999;
+}
+
+.opcion-principal .submenu li a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #151515;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.opcion-principal .submenu li a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.opcion-principal:hover .submenu {
+    display: block;
+}
+
