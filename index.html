@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="comportamientos.js"></script>
+
     <header>
         <div class="container-hero">
             <div class="container hero">
@@ -23,8 +25,8 @@
                     <h1 class="logo"><a href="/">Muebles Tecnológicos</a></h1>
                 </div>
 
-                <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
+                <div class="container-user"  >
+                    <i class="fa-solid fa-user" onclick= "redireccionarALogin()"></i>
                     <i class="fa-solid fa-basket-shopping"></i>
                     <div class="content-shopping-cart">
                         <span class="text">Carrito</span>
@@ -39,44 +41,44 @@
                 <ul class="ul menu">
                     <li class="opcion-principal"><a href="index.html">Inicio</a></li>
                     <li class="opcion-principal">
-                        <a href="#">Opción 1</a>
-                        <ul class="submenu">
+                        <a href="opcion1.html">Productos</a>
+                        <!--<ul class="submenu">
                             <li><a href="#">Opción 1.1</a></li>
                             <li><a href="#">Opción 1.2</a></li>
                             <li><a href="#">Opción 1.3</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
                     <li class="opcion-principal">
-                        <a href="#">Opción 2</a>
+                        <a href="#">Categorias</a>
                         <ul class="submenu">
                             <li><a href="#">Opción 2.1</a></li>
                             <li><a href="#">Opción 2.2</a></li>
                             <li><a href="#">Opción 2.3</a></li>
                         </ul>
                     </li>
-                    <li class="opcion-principal">
+                    <!--<li class="opcion-principal">
                         <a href="#">Opción 3</a>
                         <ul class="submenu">
                             <li><a href="#">Opción 3.1</a></li>
                             <li><a href="#">Opción 3.2</a></li>
                             <li><a href="#">Opción 3.3</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li class="opcion-principal">
-                        <a href="#">Opción 4</a>
-                        <ul class="submenu">
+                        <a href="#">Recomendación</a>
+                        <!--<ul class="submenu">
                             <li><a href="#">Opción 4.1</a></li>
                             <li><a href="#">Opción 4.2</a></li>
                             <li><a href="#">Opción 4.3</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
                     <li class="opcion-principal">
-                        <a href="#">Opción 5</a>
-                        <ul class="submenu">
+                        <a href="#">Contacto</a>
+                        <!--<ul class="submenu">
                             <li><a href="#">Opción 5.1</a></li>
                             <li><a href="#">Opción 5.2</a></li>
                             <li><a href="#">Opción 5.3</a></li>
-                        </ul>
+                        </ul>-->
                     </li>
                 </ul>
                 <form class="search-form">
@@ -156,7 +158,7 @@
             </div>
             <div class="container-products">
                 <!--Producto 1-->
-                <div class="card-product">
+                <div class="card-product" >
                     <div class="container-img">
                         <img src="img/escritorio-gamer.jpg" alt="Escritorio Gamer" class="escritorio-gigante">
                         <span class="discount">-10%</span>
@@ -194,7 +196,7 @@
                         <span class="discount">-20%</span>
                         <div class="button-group">
                             <span>
-                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-eye" onclick= "redireccionarALinkedin()"></i> <!--ONCLICK REDIRECCIONA CUANDO LE DAS CLICK AL ELEMENTO-->
                             </span>
                             <span>
                                 <i class="fa-regular fa-heart"></i>
